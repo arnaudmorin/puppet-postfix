@@ -77,6 +77,7 @@ class postfix::server (
   $smtp_tls_note_starttls_offer = false,
   $smtp_tls_mandatory_ciphers = undef,
   $smtpd_tls_ask_ccert = false,
+  $smtp_smtpd_sasl_auth_enable = 'no',
   $tls_append_default_CA = false,
   $smtp_sasl_tls = false,
   $smtp_use_tls = false,

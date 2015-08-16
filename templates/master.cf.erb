@@ -16,6 +16,7 @@ tlsproxy  unix  -       -       n       -       0       tlsproxy
 dnsblog   unix  -       -       n       -       0       dnsblog
 smtpd     pass  -       -       n       -       -       smtpd
 <% end -%>
+  -o smtpd_sasl_auth_enable=<%= @smtpd_sasl_auth_enable %>
 <% @smtp_content_filter.each do |content_filter| -%>
   -o content_filter=<%= content_filter %>
 <% end -%>
