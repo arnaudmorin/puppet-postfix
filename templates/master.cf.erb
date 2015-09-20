@@ -79,7 +79,7 @@ scache    unix  -       -       n       -       1       scache
 # Also specify in main.cf: maildrop_destination_recipient_limit=1
 #
 #maildrop  unix  -       n       n       -       -       pipe
-#  flags=DRhu user=vmail argv=/usr/local/bin/maildrop -d ${recipient}
+#  flags=DRhu user=mail argv=/usr/local/bin/maildrop -d ${recipient}
 #
 # ====================================================================
 #
@@ -122,7 +122,7 @@ scache    unix  -       -       n       -       1       scache
 #  ${nexthop} ${user}
 <% if @virtual_transport == 'dovecot' -%>
 dovecot   unix  -       n       n       -       -       pipe
-  flags=DRhu user=vmail:vmail argv=<%= @dovecot_directory %>/deliver -f ${sender} -d <%= @dovecot_destination %>
+  flags=DRhu user=mail:mail argv=<%= @dovecot_directory %>/deliver -f ${sender} -d <%= @dovecot_destination %>
 <% end -%>
 <% @master_services.each do |service| -%>
 <%= service %>
