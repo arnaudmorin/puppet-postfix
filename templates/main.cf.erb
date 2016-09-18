@@ -41,6 +41,15 @@ command_directory = <%= @command_directory %>
 #
 daemon_directory = <%= @daemon_directory %>
 
+# The location of Postfix dynamically-linked libraries (libpostfix-*.so), and
+# the default location of Postfix database plugins (postfix-*.so) that have a
+# relative pathname in the dynamicmaps.cf file. The shlib_directory parameter
+# defaults to "no" when Postfix dynamically-linked libraries and database
+# plugins are disabled at compile time, otherwise it typically defaults to
+# /usr/lib/postfix or /usr/local/lib/postfix.
+#
+shlib_directory = <%= @shlib_directory %>
+
 # The data_directory parameter specifies the location of Postfix-writable
 # data files (caches, random numbers). This directory must be owned
 # by the mail_owner account (see below).
