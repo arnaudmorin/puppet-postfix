@@ -1,5 +1,7 @@
 # puppet-postfix
 
+This module is a fork of thias/postfix with various adjustments.
+
 ## Overview
 
 This module is meant for Red Hat Enterprise Linux, its clones and FreeBSD. It
