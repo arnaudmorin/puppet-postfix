@@ -1,0 +1,15 @@
+{
+  "name": "jethrocarr-postfix",
+  "version": "0.1.0",
+  "author": "jethrocarr",
+  "summary": "Postfix provisioning module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jethrocarr/puppet-postfix",
+  "project_page": "https://github.com/jethrocarr/puppet-postfix",
+  "issues_url": "https://github.com/jethrocarr/puppet-postfix/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+  ],
+  "data_provider": null
+}
+
