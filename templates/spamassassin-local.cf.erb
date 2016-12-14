@@ -3,6 +3,15 @@
 
 required_hits <%= @sa_required_hits %>
 report_safe <%= @sa_report_safe %>
+
+use_bayes <%= @sa_use_bayes %>
+bayes_auto_learn <%= @sa_bayes_auto_learn %>
+bayes_auto_learn_threshold_spam <%= @sa_bayes_threshold_spam %>
+bayes_auto_learn_threshold_nonspam <%= @sa_bayes_threshold_nonspam %>
+
+# This should begin off
+use_auto_whitelist <%= @sa_use_auto_whitelist %>
+
 <% @sa_rewrite_header.each do |rule| -%>
 rewrite_header <%= rule %>
 <% end -%>
