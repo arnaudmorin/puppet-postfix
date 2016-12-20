@@ -39,7 +39,7 @@ AUTOWHITELIST=0
 # Wether or not to do only local checks 
 # if this is turned on, no network based checks
 # (like DNS-Blacklists) are done. (0/1)
-LOCALONLY=1
+LOCALONLY=<%= @spampd_local_only %>
 
 # Wether to prefer INET (network,1) for syslog logging
 # instead of UNIX (unix domain socket,0) (0/1)
