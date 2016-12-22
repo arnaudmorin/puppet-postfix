@@ -137,6 +137,7 @@ class postfix::server (
   $spampd_relayport           = '10027',
   $spampd_children            = '20',
   $spampd_maxsize             = '512',
+  $spampd_local_only          = '0',
   # Other filters
   $postgrey                = false,
   $postgrey_policy_service = undef,
