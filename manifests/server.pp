@@ -223,6 +223,18 @@ class postfix::server (
       notify  => Service['spampd'],
     }
   }
+  else {
+    package { [ $spamassassin_package, $spampd_package ]: ensure => purged }
+    service { 'spampd':
+      ensure => stopped,
+    }
+    file { $spampd_config:
+      ensure => absent,
+    }
+    file { '/etc/mail/spamassassin/local.cf':
+      ensure => absent,
+    }
+  }
 
   # Optional Postgrey setup
   if $postgrey {
